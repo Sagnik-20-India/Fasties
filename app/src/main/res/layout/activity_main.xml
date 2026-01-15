@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="291dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Welcome!"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        android:text="Logout" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_marginBottom="8dp">
+
+        <LinearLayout
+            android:id="@+id/categoryLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnBurger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Burgers"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnPizza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pizza"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnRoll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rolls"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnSides"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sides"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnDesserts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desserts"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnBeverages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beverages"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/viewCartButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Cart"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

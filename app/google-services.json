@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "228588032906",
+    "project_id": "fasties-ec015",
+    "storage_bucket": "fasties-ec015.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228588032906:android:1c8d116dff933a4681ee73",
+        "android_client_info": {
+          "package_name": "com.example.fasties"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "228588032906-pmikad2ls7qtg89inbjd61bo3qo50kd0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fasties",
+            "certificate_hash": "cd3f173fedceb6194ef1ea696e01e80af179013f"
+          }
+        },
+        {
+          "client_id": "228588032906-m7tamdn6pfn4dj2peb57imiceorv64te.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY1cDlAWhNyQYxHyH84AxwOuZIBCSi2A0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "228588032906-m7tamdn6pfn4dj2peb57imiceorv64te.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

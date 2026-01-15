@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/checkoutLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/checkoutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Options"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <RadioGroup
+            android:id="@+id/paymentOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <!-- Cash on Delivery -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <RadioButton
+                    android:id="@+id/paymentCOD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cash on Delivery"
+                    android:textSize="20sp"
+                    android:buttonTint="@color/black"
+                    android:layout_marginEnd="8dp" />
+
+                <ImageView
+                    android:id="@+id/codLogo"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_cod"
+                    android:contentDescription="COD Logo"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+
+        <!-- UPI -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <RadioButton
+                    android:id="@+id/paymentUPI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UPI"
+                    android:textSize="20sp"
+                    android:buttonTint="@color/black"
+                    android:layout_marginEnd="8dp" />
+
+                <ImageView
+                    android:id="@+id/upiLogo"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_upi"
+                    android:contentDescription="UPI Logo"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+
+            <!-- UPI Options -->
+            <LinearLayout
+                android:id="@+id/upiOptionsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="24dp"
+                android:visibility="gone"
+                android:layout_marginTop="16dp">
+
+                <RadioGroup
+                    android:id="@+id/upiOptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <!-- GPay -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="12dp">
+
+                        <RadioButton
+                            android:id="@+id/upiGpay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Google Pay"
+                            android:textSize="20sp"
+                            android:buttonTint="@color/black"
+                            android:layout_marginEnd="8dp" />
+
+                        <ImageView
+                            android:id="@+id/gpayLogo"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_gpay"
+                            android:contentDescription="GPay Logo"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter" />
+                    </LinearLayout>
+
+                <!-- BHIM -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="12dp">
+
+                        <RadioButton
+                            android:id="@+id/upiBhim"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BHIM"
+                            android:textSize="20sp"
+                            android:buttonTint="@color/black"
+                            android:layout_marginEnd="8dp" />
+
+                        <ImageView
+                            android:id="@+id/BhimLogo"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_bhim"
+                            android:contentDescription="Bhim Logo"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter" />
+                    </LinearLayout>
+
+                    <!-- PhonePe -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="12dp">
+
+                        <RadioButton
+                            android:id="@+id/upiPhonePe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Phone Pe"
+                            android:textSize="20sp"
+                            android:buttonTint="@color/black"
+                            android:layout_marginEnd="8dp" />
+
+                        <ImageView
+                            android:id="@+id/PhonePeLogo"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_phonepe"
+                            android:contentDescription="PhonePe Logo"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="12dp">
+
+                        <RadioButton
+                            android:id="@+id/upiID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pay by UPI ID"
+                            android:textSize="20sp"
+                            android:buttonTint="@color/black"
+                            android:layout_marginEnd="8dp" />
+
+                    </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/upiIdEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter UPI ID"
+                            android:inputType="textEmailAddress"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="16dp" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <!-- Netbanking -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <RadioButton
+                    android:id="@+id/paymentNetbanking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Netbanking"
+                    android:textSize="20sp"
+                    android:buttonTint="@color/black"
+                    android:layout_marginEnd="8dp" />
+
+                <ImageView
+                    android:id="@+id/NetbankingLogo"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_netbanking"
+                    android:contentDescription="Netbanking Logo"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+
+            <!-- Credit Card -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <RadioButton
+                    android:id="@+id/paymentCredit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Credit Card"
+                    android:textSize="20sp"
+                    android:buttonTint="@color/black"
+                    android:layout_marginEnd="8dp" />
+
+                <ImageView
+                    android:id="@+id/CreditLogo"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_creditcard"
+                    android:contentDescription="Credit Card Logo"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+
+        <!-- Debit Card -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <RadioButton
+                android:id="@+id/paymentDebit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Debit Card"
+                android:textSize="20sp"
+                android:buttonTint="@color/black"
+                android:layout_marginEnd="8dp" />
+
+            <ImageView
+                android:id="@+id/DebitLogo"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_debitcard"
+                android:contentDescription="Debit Card Logo"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+
+    </RadioGroup>
+
+        <Button
+            android:id="@+id/confirmPaymentButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Payment"
+            android:textSize="24sp"
+            android:layout_marginTop="28dp" />
+    </LinearLayout>
+</ScrollView>
